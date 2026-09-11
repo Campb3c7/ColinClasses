@@ -1,0 +1,22 @@
+version: 1
+
+project:
+  title: Probability & Random Processes
+  description: An interactive study companion for a Probability and Random Processes course. Concepts distilled into the things you have to know, with visualizations and executable simulations.
+  keywords:
+    - probability
+    - random processes
+  toc:
+    - file: index.md
+    - file: chapters/01-foundations.md
+    - file: chapters/02-random-variables.md
+    - file: chapters/03-important-distributions.md
+    - file: chapters/04-joint-distributions.md
+    - file: chapters/05-lln-and-clt.md
+    - file: chapters/06-random-processes.md
+    - file: chapters/07-poisson-processes.md
+    - file: chapters/08-markov-chains.md
+
+site:
+  template: book-theme
+  title: Probability & Random Processes
