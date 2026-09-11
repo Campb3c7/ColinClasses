@@ -4,59 +4,51 @@ title: Probability & Random Processes
 
 # Probability & Random Processes — Study Companion
 
-An interactive companion for [your course], organized around **what you have to know**.
-Each unit explains the concept, why it matters, and pairs it with a visualization or a
-simulation you can run yourself.
+An interactive companion built directly from Lectures 1–4. Each unit starts with the
+facts you have to know, then develops the intuition behind them with worked examples,
+concept maps, self-checks, and simulations.
 
-:::{important} This book is a scaffold.
-The chapter skeletons and outlines below are a draft based on a standard
-Probability & Random Processes curriculum. They will be **filled in from your actual
-lecture notes** as we work through them together.
+:::{important} Source boundary
+The material here comes from the four supplied lecture decks. Topics from later parts
+of a typical probability and random-processes course are intentionally absent until
+the matching course notes are supplied.
 :::
 
 ## The course map
 
-Everything in a typical Probability & Random Processes course hangs together like this:
+The four lectures build on one another like this:
 
 ```{mermaid}
 flowchart TD
-    A[Probability Foundations] --> B[Random Variables]
-    B --> D[Joint Distributions & Conditioning]
-    B --> C[Important Distributions]
+    A[1. Probability foundations] --> B[2. Scalar random variables]
+    B --> C[3. Common distributions]
+    B --> D[4. Functions of random variables]
     C --> D
-    D --> E[LLN & Central Limit Theorem]
-    C --> E
-    D --> F[Random Processes]
-    F --> G[Poisson Processes]
-    F --> H[Markov Chains]
+    D --> E[Bounds and transform methods]
 ```
 
 ## Units
 
-1. **Foundations of Probability** — sample spaces, events, axioms, counting,
-   conditioning, independence, Bayes' rule.
-2. **Random Variables** — PMFs, PDFs, CDFs, expectation, variance, transformations.
-3. **Important Distributions** — Bernoulli, binomial, geometric, Poisson, uniform,
-   exponential, Gaussian, and when each one shows up in the wild.
-4. **Joint Distributions & Conditioning** — joint PMFs/PDFs, covariance, correlation,
-   conditional distributions, independent random variables.
-5. **LLN & Central Limit Theorem** — convergence facts, why averages stabilize, why the
-   Gaussian shows up everywhere.
-6. **Random Processes** — the idea of a random signal, iid processes, stationarity.
-7. **Poisson Processes** — counting events in time, interarrival times, merging/splitting.
-8. **Markov Chains** — states, transition matrices, stationary distributions.
+1. [**Foundations of Probability**](chapters/01-foundations.md) — models, sample spaces,
+   events, axioms, conditioning, independence, Bayes' rule, and repeated trials.
+2. [**Scalar Random Variables**](chapters/02-random-variables.md) — random-variable maps,
+   CDFs, PMFs, PDFs, expectation, variance, moments, and conditioning.
+3. [**Common Random Variables**](chapters/03-important-distributions.md) — binomial,
+   geometric, Poisson, Zipf, uniform, exponential, Gaussian, gamma, beta, and Pareto.
+4. [**Functions, Bounds & Transforms**](chapters/04-functions-bounds-transforms.md) —
+   change of variables, skew, kurtosis, probability bounds, characteristic functions,
+   PGFs, Laplace transforms, and MGFs.
 
 ## How to use this book
 
-- **Read a unit** → each one opens with the *must-know* facts, then the *why*, then visuals.
-- **Run the simulations** → every computational figure embeds executable Python; tweak the
-  numbers and watch the picture change.
-- **Browse dropdowns & cards** → interactive elements break the density of math into
-  digestible pieces.
+- Start with each chapter's **What you have to know** box.
+- Open the self-check answers only after working the question yourself.
+- Copy a simulation into Jupyter, run it, then change its parameters and compare the result.
+- Use the source note at the end of each chapter to return to the exact lecture slides.
 
 ## Roadmap
 
-- [x] Site infrastructure (this book, GitHub Pages deployment)
-- [ ] Course map finalized against your actual syllabus
-- [ ] Unit content written from your lecture notes
-- [ ] Interactive visualizations for every major concept
+- [x] Site infrastructure and GitHub Pages deployment
+- [x] Lectures 1–4 organized into four course units
+- [x] Core explanations, formulas, concept maps, self-checks, and simulations
+- [ ] Later lectures, added only when their course materials are supplied

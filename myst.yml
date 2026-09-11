@@ -11,11 +11,7 @@ project:
     - file: chapters/01-foundations.md
     - file: chapters/02-random-variables.md
     - file: chapters/03-important-distributions.md
-    - file: chapters/04-joint-distributions.md
-    - file: chapters/05-lln-and-clt.md
-    - file: chapters/06-random-processes.md
-    - file: chapters/07-poisson-processes.md
-    - file: chapters/08-markov-chains.md
+    - file: chapters/04-functions-bounds-transforms.md
 
 site:
   template: book-theme
